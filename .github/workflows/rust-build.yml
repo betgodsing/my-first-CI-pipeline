@@ -20,6 +20,8 @@ jobs:
     - name: Build
       working-directory: rust
       run: cargo build --verbose
+    - name: Say Hello
+      run: echo "hello from pipeline"
     - name: Run tests
       working-directory: rust
       run: cargo test --verbose
